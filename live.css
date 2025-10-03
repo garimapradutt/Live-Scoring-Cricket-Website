@@ -1,0 +1,56 @@
+.scoring_buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 30px auto;
+    width: 90%;
+}
+table{
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;  
+}
+
+.buttons_for_scoring:hover {
+    background: #048f83;
+}
+#scorecard_button {
+    display: block;
+    margin: 30px auto;
+    width: 200px;
+    padding: 15px;
+    background: #00695c;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 18px;
+}
+#scorecard_button:hover {
+    background: #048f83;
+}
+
+#live_commentary{
+    text-align: center;
+    margin: 20px 0;
+    color: #f9f9f9;
+}
+
+.livee {
+    background-color: #00695c;
+    font-size: 32px;
+    color: #f9f9f9;
+    margin-bottom: 10px;
+}
+
+#live_commentary p {
+    margin: 6px 0;
+    padding: 4px;
+    border-left: 3px solid #007BFF;
+    background-color: #f9f9f9;
+    color:  #00695c;
+    padding-left: 8px;
+    border-radius: 4px;
+}
+

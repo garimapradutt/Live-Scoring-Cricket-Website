@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Setup Page</title>
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="setup.css">
+</head>
+<body>
+    <div id="matchhh">
+        <h1> MATCH SETUP </h1>
+        <div id="all_teams_list">
+            <div id="team_rcb">
+                <table class="team_table">
+                    <thead>
+                        <tr><th> RCB </th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Faf du Plessis</td></tr>
+                        <tr><td>Virat Kohli</td></tr>
+                        <tr><td>Glenn Maxwell</td></tr>
+                        <tr><td>Mahipal Lomror</td></tr>
+                        <tr><td>Dinesh Karthik</td></tr>
+                        <tr><td>Shahbaz Ahmed</td></tr>
+                        <tr><td>Wanindu Hasaranga</td></tr>
+                        <tr><td>Harshal Patel</td></tr>
+                        <tr><td>Mohammed Siraj</td></tr>
+                        <tr><td>Josh Hazlewood</td></tr>
+                        <tr><td>Karn Sharma</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="team_dc">
+                <table class="team_table">
+                    <thead>
+                        <tr><th> DC </th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>David Warner</td></tr>
+                        <tr><td>Prithvi Shaw</td></tr>
+                        <tr><td>Mitchell Marsh</td></tr>
+                        <tr><td>Rilee Rossouw</td></tr>
+                        <tr><td>Rishabh Pant</td></tr>
+                        <tr><td>Axar Patel</td></tr>
+                        <tr><td>Lalit Yadav</td></tr>
+                        <tr><td>Anrich Nortje</td></tr>
+                        <tr><td>Kuldeep Yadav</td></tr>
+                        <tr><td>Khaleel Ahmed</td></tr>
+                        <tr><td>Mukesh Kumar</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="team_csk">
+                <table class="team_table">
+                    <thead>
+                        <tr><th> CSK </th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Ruturaj Gaikwad</td></tr>
+                        <tr><td>Devon Conway</td></tr>
+                        <tr><td>Ajinkya Rahane</td></tr>
+                        <tr><td>Moeen Ali</td></tr>
+                        <tr><td>Shivam Dube</td></tr>
+                        <tr><td>Ravindra Jadeja</td></tr>
+                        <tr><td>MS Dhoni</td></tr>
+                        <tr><td>Deepak Chahar</td></tr>
+                        <tr><td>Maheesh Theekshana</td></tr>
+                        <tr><td>Tushar Deshpande</td></tr>
+                        <tr><td>Matheesha Pathirana</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="team_mi">
+                <table class="team_table">
+                    <thead>
+                        <tr><th> MI </th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Rohit Sharma</td></tr>
+                        <tr><td>Ishan Kishan</td></tr>
+                        <tr><td>Suryakumar Yadav</td></tr>
+                        <tr><td>Cameron Green</td></tr>
+                        <tr><td>Tilak Varma</td></tr>
+                        <tr><td>Tim David</td></tr>
+                        <tr><td>Nehal Wadhera</td></tr>
+                        <tr><td>Jasprit Bumrah</td></tr>
+                        <tr><td>Piyush Chawla</td></tr>
+                        <tr><td>Jason Behrendorff</td></tr>
+                        <tr><td>Kumar Kartikeya</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="team_kkr">
+                <table class="team_table">
+                    <thead>
+                        <tr><th> KKR </th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Rahmanullah Gurbaz</td></tr>
+                        <tr><td>Venkatesh Iyer</td></tr>
+                        <tr><td>Nitish Rana</td></tr>
+                        <tr><td>Rinku Singh</td></tr>
+                        <tr><td>Andre Russell</td></tr>
+                        <tr><td>Shardul Thakur</td></tr>
+                        <tr><td>Sunil Narine</td></tr>
+                        <tr><td>Lockie Ferguson</td></tr>
+                        <tr><td>Umesh Yadav</td></tr>
+                        <tr><td>Varun Chakaravarthy</td></tr>
+                        <tr><td>Harshit Rana</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="form_ka_div">
+            <form id="form_for_setup">
+                <div class="setup_form_team_name">
+                    <label for="team1_name">Select Team 1</label>
+                    <select id="team1_name" name="team1" class="drop_down">
+                        <option value="CSK">CSK</option>
+                        <option value="MI">MI</option>
+                        <option value="RCB">RCB</option>
+                        <option value="KKR">KKR</option>
+                        <option value="DC">DC</option>
+                    </select>
+                </div>
+
+                <div class="setup_form_team_name">
+                    <label for="team2_name">Select Team 2</label>
+                    <select id="team2_name" name="team2" class="drop_down">
+                        <option value="MI">MI</option>
+                        <option value="RCB">RCB</option>
+                        <option value="KKR">KKR</option>
+                        <option value="DC">DC</option>
+                    </select>
+                </div>
+
+                <div class="setup_form_toss">
+                    <label for="toss_winner">Toss Winner: </label>
+                    <select id="toss_winner" name="toss_winner">
+                        <option value="team1">TEAM 1</option>
+                        <option value="team2">TEAM 2</option>
+                    </select>
+                </div>
+
+                <div class="setup_form_toss">
+                    <label for="toss_decision">Toss Decision: </label>
+                    <select id="toss_decision" name="toss_decision">
+                        <option value="bat">bat</option>
+                        <option value="bowl">bowl</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="number_of_overs">Enter Number Of Overs: </label>
+                    <input type="number" id="number_of_overs" placeholder="Number Of Overs">
+                </div>
+
+                <button id="match_start">Shuru Karo</button>
+
+                <div id="prompt_in_start" class="modal">
+                    <div id="modal_for_first_prompt" class="modal-body">
+                        <label for="strikerr">Striker Name: </label>
+                        <select id="strikerr" name="Current Striker">
+                            <option value="" disabled selected>Select your striker</option>
+                        </select>
+
+                        <label for="nonstrikerr">Non Striker Name: </label>
+                        <select id="nonstrikerr" name="Current Non Striker">
+                            <option value="" disabled selected>Select striker first</option>
+                        </select>
+
+                        <label for="bowlerr">Bowler: </label>
+                        <select id="bowlerr" name="Bowler"></select><br>
+
+                        <button id="submit_first_prompt">Done</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="score.js"></script>
+</body>
+</html>

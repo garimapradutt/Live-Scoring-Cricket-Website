@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+    <title>Scorecard</title>
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="scorecard.css">
+</head>
+<body>
+    <h1> Scorecard Page </h1>
+    <a href="live.html">Go back to live </a><br>
+    <button id="innings1"> Innings 1</button>
+    <button id="innings2"> Innings 2</button>
+    <br><br>
+    <div>
+    <table id="batting_scorecard">
+        <thead>
+            <tr>
+            <th> S.No. </th>
+            <th> Name </th>
+            <th> Runs </th>
+            <th> Balls Faced </th>
+            <th> 4s </th>
+            <th> 6s </th>
+            <th> Strike Rate </th>
+            </tr>
+        </thead>
+        <tbody id="batting_order">           
+        </tbody>
+    </table>
+    </div>
+    <div>
+        <table id="bowling_scorecard">
+            <thead>
+                <tr>
+                <th> S.No. </th>
+                <th> Name </th>
+                <th> Overs </th>
+                <th> Maidens </th>
+                <th> Runs Conceded </th>
+                <th> Wickets </th>
+                <th> Economy Rate </th>
+                </tr>
+            </thead>
+            <tbody id="bowling_order">
+     
+            </tbody>
+        </table>
+        </div>
+        <script src="score.js"></script>
+</body>
+</html>

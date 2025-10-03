@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Live Match Scoring Interface</title>
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="live.css">
+</head>
+<body>
+    <div id="match_info">
+        <div class="match_info">
+            <h1>Live Cricket Match</h1>
+            <h2 id="display_team">Team A 0/0 (0.0) vs Team B</h2>
+            <h2 id="display_innings">1st Innings</h2>
+            <h2 id="current_run_rate">CRR: 0.00</h2>
+            <h2 id="required_run_rate"></h2>
+        </div>
+
+        <div class="bat_table">
+            <h2>Batting Section</h2>
+            <table id="batter_table">
+                <thead>
+                    <tr>
+                        <th>Position</th>
+                        <th>Name</th>
+                        <th>Runs Scored</th>
+                        <th>Balls Faced</th>
+                        <th>4s</th>
+                        <th>6s</th>
+                        <th>Strike Rate</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="striker">
+                        <td>1</td>
+                        <td id="striker_name">name</td>
+                        <td id="striker_runs">0</td>
+                        <td id="strikerr_balls">0</td>
+                        <td id="striker_fours">0</td>
+                        <td id="striker_sixes">0</td>
+                        <td id="striker_sr">0.00</td>
+                    </tr>
+                    <tr id="non_striker">
+                        <td>2</td>
+                        <td id="non_striker_name">name</td>
+                        <td id="non_striker_runs">0</td>
+                        <td id="non_striker_balls">0</td>
+                        <td id="non_striker_fours">0</td>
+                        <td id="non_striker_sixes">0</td>
+                        <td id="non_striker_sr">0.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="bowl_table">
+            <h2>Bowling Section</h2>
+            <table id="bowler_table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Overs</th>
+                        <th>Maidens</th>
+                        <th>Runs Conceded</th>
+                        <th>Wickets</th>
+                        <th>Economy Rate</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="bowl_name">name</td>
+                        <td id="bowl_overs">0</td>
+                        <td id="bowl_maidens">0</td>
+                        <td id="bowl_runs">0</td>
+                        <td id="bowl_wickets">0</td>
+                        <td id="bowl_er">0.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="scoring_buttons">
+            <button id="zero_runs" class="buttons_for_scoring">zero runs</button>
+            <button id="one_run" class="buttons_for_scoring">one run</button>
+            <button id="two_runs" class="buttons_for_scoring">two runs</button>
+            <button id="three_runs" class="buttons_for_scoring">three runs</button>
+            <button id="four_runs" class="buttons_for_scoring">four runs</button>
+            <button id="five_runs" class="buttons_for_scoring">five runs</button>
+            <button id="six_runs" class="buttons_for_scoring">six runs</button>
+            <button id="wide" class="buttons_for_scoring">wide</button>
+            <button id="byes" class="buttons_for_scoring">byes</button>
+            <button id="leg_byes" class="buttons_for_scoring">leg-byes</button>
+            <button id="noball" class="buttons_for_scoring">no ball</button>
+            <button id="wicket_button" class="buttons_for_scoring">OUT</button>
+            <button id="run_out" class="buttons_for_scoring">RUN OUT</button>
+        </div>
+
+        <div id="prompt_for_newbowler" class="modal">
+            <div class="modal-header">
+                <p>New Bowler</p>
+            </div>
+            <div class="modal-body">
+                <label for="newwbowler">New Bowler:</label>
+                <select id="newwbowler" name="New Bowler"></select><br>
+                <button id="prompt_new_bowler">Done</button>
+            </div>
+        </div>
+
+        <div id="prompt_for_newbatter" class="modal">
+            <div class="modal-body">
+                <label for="newwbatter">New Batter:</label>
+                <select id="newwbatter" name="New Batter"></select><br>
+                <button id="prompt_new_batter">Done</button>
+            </div>
+        </div>
+
+        <div id="prompt_for_innings1" class="modal">
+            <div class="modal-header">
+                <p>Innings 1 Over</p>
+            </div>
+            <div class="modal-body">
+                <label for="strikerr">Striker Name:</label>
+                <select id="strikerr" name="Current Striker">
+                    <option value="" disabled selected>Select your striker</option>
+                </select>
+
+                <label for="nonstrikerr">Non Striker Name:</label>
+                <select id="nonstrikerr" name="Current Non Striker">
+                    <option value="" disabled selected>Select striker first</option>
+                </select>
+
+                <label for="bowlerr">Bowler:</label>
+                <select id="bowlerr" name="Bowler"></select><br>
+
+                <button id="prompt_for_innings_1">Done</button>
+            </div>
+        </div>
+
+        <div id="prompt_for_runout" class="modal">
+            <div class="modal-header">
+                <p>Run Out</p>
+            </div>
+            <div class="modal-body">
+                <label for="batsman">Batsman Name:</label>
+                <select id="batsman" name="Batsman">
+                    <option value="" disabled selected>Select Batsman</option>
+                </select>
+
+                <label for="runs">Runs Before Run Out:</label>
+                <select id="runs" name="Runs">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select><br>
+
+                <button id="prompt_for_run_out">Done</button>
+            </div>
+        </div>
+
+        <div>
+            <h2 id="livee">Live Commentary</h2>
+            <div id="live_commentary"></div>
+        </div>
+
+        <button id="scorecard_button" onclick="viewscorecard()" class="buttons">View Scorecard</button>
+    </div>
+
+    <script src="score.js"></script>
+</body>
+</html>

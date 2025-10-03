@@ -1,0 +1,10 @@
+#match_result{
+    margin-top: 300px;
+    margin-bottom: 250px;
+}
+#reset_button{
+    margin-top: 100px;
+}
+#reset_button:hover{
+    background-color: #296f69;
+}
